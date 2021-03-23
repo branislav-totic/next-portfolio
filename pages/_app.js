@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import { Footer, Header } from '../components'
-import { CreateGlobalStyle, Contianer } from '../styles/globals.css'
+import Head from "next/head";
+import { Footer, Header } from "../components";
+import { CreateGlobalStyle, Contianer, Root } from "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -9,14 +9,34 @@ const MyApp = ({ Component, pageProps }) => {
       <Head>
         <title>NEXT App Test</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+            rel="preload"
+            href="/fonts/GrimPrint/Grimpt-PrintLight.woff"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/GrimPrint/Grimpt-PrintRegular.woff"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/GrimPrint/Grimpt-PrintBold.woff"
+            as="font"
+            crossOrigin=""
+          />
       </Head>
-      <Contianer>
+      <Root>
         <Header />
-        <Component {...pageProps} />
+        <Contianer>
+          <Component {...pageProps} />
+        </Contianer>
         <Footer />
-      </Contianer>
+      </Root>
     </>
-  )
-}
+  );
+};
 
-export default MyApp
+export default MyApp;
