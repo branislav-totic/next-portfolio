@@ -16,13 +16,13 @@ const Header = ({ isDesktop }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const scrollRef = useRef()
 
-  useEffect(() => {
-    if (isMobileOpen) {
-      document.body.style.overflowY = `hidden`;
-    } else {
-      document.body.style.overflowY = `auto`;
-    }
-  }, [isMobileOpen]);
+  // useEffect(() => {
+  //   if (isMobileOpen) {
+  //     document.body.style.overflowY = `hidden`;
+  //   } else {
+  //     document.body.style.overflowY = `auto`;
+  //   }
+  // }, [isMobileOpen]);
 
   const indicateScrollBar = () => {
     const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
