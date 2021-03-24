@@ -5,6 +5,7 @@ export const CreateGlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
   }
 
   a {
@@ -52,4 +53,5 @@ export const Root = styled.div`
   min-height: 100vh;
   font-family: GrimPrint;
   font-weight: normal;
+  background-color: #000;
 `;
