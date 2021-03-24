@@ -11,19 +11,19 @@ const MyApp = ({ Component, pageProps }) => {
         <link rel="icon" href="/favicon.ico" />
         <link
             rel="preload"
-            href="/fonts/GrimPrint/Grimpt-PrintLight.woff"
+            href="/fonts/GrimptPrint/Grimpt-PrintLight.woff"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="/fonts/GrimPrint/Grimpt-PrintRegular.woff"
+            href="/fonts/GrimptPrint/Grimpt-PrintRegular.woff"
             as="font"
             crossOrigin=""
           />
           <link
             rel="preload"
-            href="/fonts/GrimPrint/Grimpt-PrintBold.woff"
+            href="/fonts/GrimptPrint/Grimpt-PrintBold.woff"
             as="font"
             crossOrigin=""
           />

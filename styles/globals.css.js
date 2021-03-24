@@ -18,7 +18,7 @@ export const CreateGlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: "GrimPrint";
-    src: url("/fonts/GrimPrint/Grimpt-PrintLight.woff");
+    src: url("/fonts/GrimptPrint/Grimpt-PrintLight.woff") format('woff');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -26,31 +26,30 @@ export const CreateGlobalStyle = createGlobalStyle`
 
   @font-face {
     font-family: "GrimPrint";
-    src: url("/fonts/GrimPrint/Grimpt-PrintRegular.woff");
-    font-style: medium;
-    font-weight: 500;
+    src: url("/fonts/GrimptPrint/Grimpt-PrintRegular.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
     font-display: swap;
   }
 
   @font-face {
     font-family: "GrimPrint";
-    src: url("/fonts/GrimPrint/Grimpt-PrintBold.woff");
-    font-style: medium;
-    font-weight: 700;
+    src: url("/fonts/GrimptPrint/Grimpt-PrintBold.woff") format('woff');
+    font-style: normal;
+    font-weight: bold;
     font-display: swap;
   }
 `;
 
-export const Contianer = styled.div`
+export const Contianer = styled.div``;
+
+export const Root = styled.div`
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-export const Root = styled.div`
   min-height: 100vh;
   font-family: GrimPrint;
-  font-weight: 700;
+  font-weight: normal;
 `;
