@@ -1,7 +1,7 @@
 import react, { useState, useEffect } from "react";
 import Head from "next/head";
 import { Footer, Header } from "../components";
-import { CreateGlobalStyle, Contianer, Root } from "../styles/globals.css";
+import { CreateGlobalStyle, Contianer, Root, NavSpacer } from "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -43,8 +43,9 @@ const MyApp = ({ Component, pageProps }) => {
         />
       </Head>
       <Root>
-        <Header isDesktop={isDesktop}/>
+        <Header isDesktop={isDesktop} />
         <Contianer>
+          <NavSpacer />
           <Component {...pageProps} isDesktop={isDesktop} />
         </Contianer>
         <Footer />

@@ -16,6 +16,7 @@ const Header = ({ isDesktop }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const scrollRef = useRef()
 
+  // block srolling site
   // useEffect(() => {
   //   if (isMobileOpen) {
   //     document.body.style.overflowY = `hidden`;
