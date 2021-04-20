@@ -1,17 +1,21 @@
-import {
-  Card,
-  Code,
-  Description,
-  Grid,
-  Main,
-  Title,
-} from '../styles/Home.css'
 
 const Home = () => {
   return (
     <>
-      <section >
-        Test
+      <section style={{height: `400px`, background: `green`}}>
+        Hero Image
+      </section>
+      <section style={{height: `400px`}}>
+        Hero Image
+      </section>
+      <section style={{height: `400px`, background: `green`}}>
+        Hero Image
+      </section>
+      <section style={{height: `400px`}}>
+        Hero Image
+      </section>
+      <section style={{height: `400px`, background: `green`}}>
+        Abouth
       </section>
     </>
   )
