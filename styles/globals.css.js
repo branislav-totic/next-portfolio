@@ -42,16 +42,16 @@ export const CreateGlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Contianer = styled.div``;
-
 export const Root = styled.div`
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   font-family: GrimPrint;
   font-weight: normal;
   background-color: #000;
+  color: #fff;
+`;
+
+export const Contianer = styled.main``;
+
+export const NavSpacer = styled.div`
+  height: 50px;
 `;

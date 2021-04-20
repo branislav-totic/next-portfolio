@@ -5,9 +5,10 @@ export const Container = styled.footer`
   height: 100px;
   border-top: 1px solid #eaeaea;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   img {
     margin-left: 0.5rem;
   }
@@ -20,5 +21,5 @@ export const Container = styled.footer`
 `;
 
 export const Logo = styled.img`
-  height: 1em;
+  height: 1rem;
 `;
