@@ -53,5 +53,5 @@ export const Root = styled.div`
 export const Contianer = styled.main``;
 
 export const NavSpacer = styled.div`
-  height: 50px;
+  height: 47px;
 `;
