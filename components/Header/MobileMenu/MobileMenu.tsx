@@ -1,7 +1,11 @@
 import React from "react";
 import { Container, Wrapper } from "./MobileMenu.css";
 
-const MobileMenu = ({ isHidden }) => {
+type MobileMenuProps = {
+  isHidden: boolean
+}
+
+const MobileMenu:React.FC<MobileMenuProps> = ({ isHidden }) => {
   return (
     <Container isHidden={isHidden}>
       <Wrapper>

@@ -15,7 +15,7 @@ const Home = () => {
         Hero Image
       </section>
       <section style={{height: `400px`, background: `green`}}>
-        Abouth
+        About
       </section>
     </>
   )

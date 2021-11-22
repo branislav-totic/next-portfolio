@@ -12,9 +12,13 @@ import {
   Wrapper,
 } from "./Header.css";
 
-const Header = ({ isDesktop }) => {
+type HeaderProps = {
+  isDesktop: boolean
+}
+
+const Header:React.FC<HeaderProps> = ({ isDesktop }) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const scrollRef = useRef()
+  const scrollRef = useRef<HTMLDivElement>(null)
 
   // block srolling site
   // useEffect(() => {
@@ -30,7 +34,9 @@ const Header = ({ isDesktop }) => {
     const distanceFromPageTop = document.body.scrollTop || scrollTop;
     const height = scrollHeight - clientHeight;
     const scrolled = (distanceFromPageTop / height) * 100;
-    scrollRef.current.style.width = `${scrolled}%`;
+    if (scrollRef.current) {
+      scrollRef.current.style.width = `${scrolled}%`;
+    }
   };
 
   useEffect(() => {
@@ -50,7 +56,7 @@ const Header = ({ isDesktop }) => {
           {!isDesktop && (
             <Hamburger onClick={handleMenuClick}>
               <HamburgerBox>
-                <HamburgerInner isActive={!isMobileOpen} />
+                <HamburgerInner /*isActive={!isMobileOpen}*/ />
               </HamburgerBox>
             </Hamburger>
           )}
